@@ -17,8 +17,9 @@ li>a{
     font-weight: 900;
     color: white;
     background-color: black;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
+    font-size: 14px;
 }
 li>a:hover{
     color: black;
@@ -30,7 +31,7 @@ li>a:hover{
     background-color: white;
 }
 .dropdown-item:hover{
-    
+
     background-color: black;
     color: aliceblue;
 }
@@ -115,7 +116,7 @@ li>a:hover{
 }
 .card>img{
     height: 380px;
-    
+
     image-rendering: crisp-edges;
 }
 }
@@ -125,8 +126,8 @@ li>a:hover{
     } 
     .card{
         margin: auto;
-        width: 60%;
-        
+        width: 75%;
+
     }
     .card>img{
         height: 300px;
@@ -134,6 +135,23 @@ li>a:hover{
     .card-wrapper{
         margin:15px auto;
     }
+    .cover-img-text{
+        position:absolute;
+        z-index: 2;
+        top:42%;
+        font-size:large;
+        width: 100%;
+        text-align: center;
+    }
+    li>a{
+        font-weight: 900;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
 }
 
 @media only screen and (min-width: 601px) and (max-width:1000px) { /* Tablet */
@@ -206,4 +224,3 @@ td>a:hover{
     margin-left: auto;
     margin-right: auto;
   }
-
