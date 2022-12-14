@@ -1,0 +1,191 @@
+
+/* All Product Header */
+.login-button,.cartlogo,.srch-btn{
+    margin: 5px;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+input[type='search']{
+    font-weight: 900;
+    height: auto;
+}
+
+/* All Product Nav Bar */
+
+li>a{
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+li>a:hover{
+    color: black;
+    background-color: white;
+}
+
+.dropdown-item{
+    color: black;
+    background-color: white;
+}
+.dropdown-item:hover{
+
+    background-color: black;
+    color: aliceblue;
+}
+.dropdown-menu{
+    padding: 0px;  
+}
+.nav{
+    background-color: black;
+    height: auto;
+    padding:5px;
+}
+.active>a{
+    color: black;
+    background-color: white; 
+}
+
+/* All Product Cover Image */
+
+.img-cover{
+    position: relative;
+}
+.img-fluid{
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+.cover-img-logo{
+    position:absolute;
+    z-index: 2;
+    top:30%;
+    left: 39.5%;
+    text-align: center;
+    height: 12%;
+    width: auto;
+}
+.cover-img-text{
+    position:absolute;
+    z-index: 2;
+    top:42%;
+    font-size:xx-large;
+    width: 100%;
+    text-align: center;
+}
+
+/* All Product Featured Products*/
+
+.card-body>h5{
+    display: inline;
+    font-weight: 600;
+    font-size: 15px;
+}
+.card-body>a{
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+.card-body>p{
+    font-size: smaller;
+}
+.card-body>a:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.card{
+    width: 15rem;
+    margin-top: 10px;
+    margin-left:5%;
+}
+
+.all-product{
+    margin: 5px;
+}
+
+.all-product>h2{    
+    font-weight: 20%;
+    text-align: center;
+}
+@media only screen and (min-width: 601px) and (max-width:1000px) { /* Tablet */
+    .card{
+        width: 15rem;
+        margin-top: 10px;
+        margin-left:20%;
+    }
+    .all-product{
+        margin: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) { /* Phone */
+    
+    .card-body>h5,a{
+        font-size: 15px;
+    }
+    .card-body>a{
+        font-size: 14px;
+    }
+    .card-body>p{
+        font-size: 10px;
+    }
+    li>a{
+        font-weight: 900;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .card{
+        width:10rem;
+        margin-top: 10px;
+        margin-left:30%;
+    }
+    .all-product{
+        margin: 5px;
+    }
+    
+}
+
+
+/* All Product Footer */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center; 
+}
+
+table{
+    margin: 15px;
+}
+th{
+    font-size: larger;
+}
+td>a{
+    color: white;
+    font-size: medium;
+}
+td>a:hover{
+    text-decoration:black;
+    color: white;
+}
+
+
+/* All Product Copyright */
+
+.copyright-footer{
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }

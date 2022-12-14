@@ -1,0 +1,232 @@
+
+/* Home-Page Header */
+.login-button,.cartlogo,.srch-btn{
+    margin: 5px;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+input[type='search']{
+    font-weight: 900;
+    height: auto;
+}
+
+/* Home-Page Nav Bar */
+
+li>a{
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+li>a:hover{
+    color: black;
+    background-color: white;
+}
+
+.dropdown-item{
+    color: black;
+    background-color: white;
+}
+.dropdown-item:hover{
+
+    background-color: black;
+    color: aliceblue;
+}
+.dropdown-menu{
+    padding: 0px;  
+}
+.nav{
+    background-color: black;
+    height: auto;
+    padding:5px;
+}
+.active>a{
+    color: black;
+    background-color: white; 
+}
+
+/* Home-Page Cover Image */
+
+.img-cover{
+    position: relative;
+}
+.img-fluid{
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+.cover-img-logo{
+    position:absolute;
+    z-index: 2;
+    top:30%;
+    left: 39.5%;
+    text-align: center;
+    height: 12%;
+    width: auto;
+}
+.cover-img-text{
+    position:absolute;
+    z-index: 2;
+    top:42%;
+    font-size:xx-large;
+    width: 100%;
+    text-align: center;
+}
+
+/* Home-Page Featured Products*/
+
+.featured-products{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.featured-products>h2{
+    font-weight: 20%;
+    text-align: center;
+}
+.card-body>h5{
+    display: inline;
+    font-weight: 600;
+}
+.card-body>a{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.card-body>a:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+@media only screen and (min-width: 1000px) { /* Laptop and Desktop */
+.card-wrapper{
+    display: flex;
+    margin:auto auto;
+
+}
+.card{
+    margin: 10px;
+    width: calc(100%/5);
+}
+.card>img{
+    height: 380px;
+
+    image-rendering: crisp-edges;
+}
+}
+@media only screen and (max-width: 600px) { /* Phone */
+    .card:not(:first-child){
+        display: none;
+    } 
+    .card{
+        margin: auto;
+        width: 80%;
+
+    }
+    .card>img{
+        height: 300px;
+    }
+    .card-wrapper{
+        margin:15px auto;
+    }
+    .cover-img-text{
+        position:absolute;
+        z-index: 2;
+        top:42%;
+        font-size:large;
+        width: 100%;
+        text-align: center;
+    }
+    li>a{
+        font-weight: 900;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    #carouselExampleControls{
+        height: 500px;
+        font-size: 14px;
+    }
+    .card-title{
+        font-weight: 900;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width:1000px) { /* Tablet */
+    .card:not(:nth-child(-n+3)){
+        display: none;
+    }
+    .card{
+        margin: 5px;
+        width: calc(100%/3);
+        border: 1px gray solid;
+
+    }
+    .card>img{
+        height: 300px;
+    }
+    .card-wrapper{
+        display: flex;
+        margin:15px auto;
+    }
+}
+
+.carousel-inner{
+    padding: 1em;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.carousel-control-next span{
+    color: white;
+}
+
+/* Home-Page Footer */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center; 
+}
+
+table{
+    margin: 15px;
+}
+th{
+    font-size: larger;
+}
+td>a{
+    color: white;
+    font-size: medium;
+}
+td>a:hover{
+    text-decoration:black;
+    color: white;
+}
+
+
+/* Home-Page Copyright */
+
+.copyright-footer{
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
