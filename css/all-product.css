@@ -150,7 +150,10 @@ li>a:hover{
     .all-product{
         margin: 5px;
     }
-    
+    .p-p{
+        align-items: center;
+        padding-left:20px;
+    }
 }
 
 
