@@ -130,10 +130,20 @@ li>a:hover{
         font-size: 15px;
     }
     .card-body>a{
-        font-size: 14px;
+        font-size: 10px;
     }
     .card-body>p{
         font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+    .card-body>p:hover{
+        overflow:visible;
+        white-space: pre-wrap;
+        text-overflow: inherit;
+
     }
     li>a{
         font-weight: 900;
@@ -143,9 +153,11 @@ li>a:hover{
         font-size: 13px;
     }
     .card{
-        width:9rem;
+        width:10rem;
         margin-top: 10px;
-        margin-left:20px;
+    }
+    .card-img-top{
+        height: 11rem;
     }
     .all-product{
         margin: 5px;
