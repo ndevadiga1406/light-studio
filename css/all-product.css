@@ -101,12 +101,8 @@ li>a:hover{
 .card{
     width: 15rem;
     margin-top: 10px;
-    margin-left:5%;
 }
 
-.all-product{
-    margin: 5px;
-}
 
 .all-product>h2{    
     font-weight: 20%;
@@ -116,11 +112,8 @@ li>a:hover{
     .card{
         width: 15rem;
         margin-top: 10px;
-        margin-left:20%;
     }
-    .all-product{
-        margin: 5px;
-    }
+    
 
 }
 
@@ -159,12 +152,10 @@ li>a:hover{
     .card-img-top{
         height: 11rem;
     }
-    .all-product{
-        margin: 5px;
-    }
+    
     .p-p{
         align-items: center;
-        padding-left:20px;
+        padding-left:30px;
     }
 }
 
