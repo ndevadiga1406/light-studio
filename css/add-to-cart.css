@@ -97,7 +97,21 @@ form{
 
 /* Media Queries*/
 
-@media only screen and (max-width: 800px) { /* Phone */
+
+@media only screen and (min-width: 451px) and (max-width:1000px) { /* Tablet */
+    .input-group button{
+        background-color: black;
+        color: white;
+        width: calc(60%/3);
+        text-align: center;
+    }
+    
+    
+    .total-item{
+        width: calc(60%/3);
+        text-align: center;
+    }
+
     #cart-item img{
         max-height: 200px;
         max-width: 100px;
@@ -129,6 +143,28 @@ form{
         text-overflow: inherit;
     
     }
+    li>a{
+        font-weight: 900;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 450px) { /* Phone */
     
+    .input-group button{
+        background-color: black;
+        color: white;
+        width: calc(100%/3);
+        text-align: center;
+    }
+    
+    
+    .total-item{
+        width: calc(100%/3);
+        text-align: center;
+    }
     
 }
