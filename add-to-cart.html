@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/add-to-cart.css">
+    
+    <script src="app.js"></script>
+</head>
+
+<body onload="cartLoad()" class="scrollbar" id="scroll-style">
+    <!-- Start Header -->
+    <div style="border-bottom: 1px solid black;" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="150px" height="60px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <div class="mx-auto me-auto mb-2 mb-lg-0 ">
+                        <p class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn srch-btn" type="submit">Search</button>
+                            </form>
+                        </p>
+                    </div>
+                    <div>
+                        <button class="btn login-button"  onclick="window.location.href='login.html'" >Log In</button>
+                        <a class="btn cart-logo" href="add-to-cart.html"> <i class="cart fa fa-shopping-cart"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--End Header -->
+
+    <!--Start NavBar -->
+    <div class="sticky-top" id="navbar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item active">
+                <a class="btn-a" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="btn-a " href="all-products.html">All Products</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class=" dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Women</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">All Products</a></li>
+                    <li><a class="dropdown-item" href="#">Dresses</a></li>
+                    <li><a class="dropdown-item" href="#">Pants</a></li>
+                    <li><a class="dropdown-item" href="#">Skirts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class=" dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Men</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">All Products</a></li>
+                    <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    <li><a class="dropdown-item" href="#">Pants</a></li>
+                    <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class=" btn-a" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class=" btn-a" href="contact-us.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!--End NavBar -->
+
+    <!--Start Cart Content-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6">
+                <div class="container">
+                    <table class="center" id="cart-item">
+                        <tr>
+                            <th class="cart-item-header" colspan="3">Items in cart</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="./images/Products/Women/Dress/pink-dress.jpg" alt="">
+                            </td>
+                            <td>
+                                <h3>Pink Dress</h3>
+                                <h4>₹ <span>400</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
+                                <button class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></button>
+                            </td>
+                            <td>
+                            <form>
+                                    <input style="display:none" class="id" name="id" value="1" />
+                                <div class="input-group mb-3">
+                                    <button class="btn" onclick="minusClick(this.form)" type="button" id="button-minus">-</button>
+                                    <input class="total-item" type="number" value="1"  min="1" name="items"  type="text" class="form-control">
+                                    <button class="btn" onclick="plusClick(this.form)" type="button" id="button-plus">+</button>
+                                </div>
+                            </form>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>
+                                <img src="./images/Products/Women/Dress/pink-dress.jpg" alt="">
+                            </td>
+                            <td>
+                                <h3>Pink Dress</h3>
+                                <h4>₹ <span>500</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
+                                <a class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></a>
+                            </td>
+                            <td>
+                            <form>
+                                    <input style="display:none" class="id" name="id" value="2" />
+                                <div class="input-group mb-3">
+                                    <button class="btn" onclick="minusClick(this.form)" type="button" id="button-minus">-</button>
+                                    <input class="total-item" type="number" value="1"   name="items"  type="text" class="form-control">
+                                    <button class="btn" onclick="plusClick(this.form)" type="button" id="button-plus">+</button>
+                                </div>
+                            </form>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <img src="./images/Products/Women/Dress/pink-dress.jpg" alt="">
+                            </td>
+                            <td>
+                                <h3>Pink Dress</h3>
+                                <h4>₹ <span>300</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
+                                <a class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></a>
+                            </td>
+                            <td>
+                            <form>
+                                    <input style="display:none" class="id" name="id" value="3" />
+                                <div class="input-group mb-3">
+                                    <button class="btn" onclick="minusClick(this.form)" type="button" id="button-minus">-</button>
+                                    <input class="total-item" type="number" value="1"  min="1" name="items"  type="text" class="form-control">
+                                    <button class="btn" onclick="plusClick(this.form)" type="button" id="button-plus">+</button>
+                                </div>
+                            </form>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="container">
+                    <table class="center" id="cart-summary">
+                        <tr>
+                            <th class="cart-summary-header" >Summary</th>
+                        </tr>
+                        <tr>
+                            <td>
+                               <div id="cost">
+                                <p id="cost-text">
+                                    Cost
+                                </p>
+                                <p id="cost-price">
+                                    ₹ <span>500</span>
+                                </p>
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="shipping">
+                                    <p id="shipping-text">
+                                        Shipping
+                                    </p>
+                                    <p id="shipping-price">
+                                        ₹ <span>50</span>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr>
+                               <div id="total">
+                                    <p id="total-text">
+                                        Total
+                                    </p>
+                                    <p id="total-price">
+                                        ₹ <span></span>
+                                    </p>
+                               </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!--End Cart Content-->
+
+    <!--- Start Modals -->
+
+    <button style="display: none;" type="button" id="modalClick" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Item remove alert</h5>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to remove this item form your cart !
+            </div>
+            <div class="modal-footer">
+              <button type="button" onclick="cartAlertNo()" class="btn btn-dark" data-bs-dismiss="modal">No</button>
+              <button type="button" onclick="cartAlertYes()"  class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <button style="display: none;"  id="removeClick" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+    
+    </button>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel1">Item remove alert</h5>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to remove this item form your cart !
+            </div>
+            <div class="modal-footer">
+              <button type="button" onclick="cartAlertNoDirect()" class="btn btn-dark" data-bs-dismiss="modal">No</button>
+              <button type="button" onclick="cartAlertYesDirect()"  class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--- End Modals -->
+
+    <!--Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-3 col-lg-3 ">
+                    <table class="center ">
+                        <tr>
+                            <th>
+                                Women
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">All Products</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Dresses</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Pants</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Skirts</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <table class="center ">
+                        <tr>
+                            <th>
+                                Men
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">All Products</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Shirts</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Pants</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Hoodies</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <table class="center ">
+                        <tr>
+                            <th>
+                                Kids
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col-sm-3 col-lg-3">
+                    <table class="center ">
+                        <tr>
+                            <th>
+                                Links
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Home</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Login</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Contact</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--End Footer -->
+                <!--Start CopyRight -->
+                <div class="copyright-footer col-12">
+                    <h6> Copyright LIGHT STUDIO 2022</h6>
+                </div>
+                <!--End CopyRight -->
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>

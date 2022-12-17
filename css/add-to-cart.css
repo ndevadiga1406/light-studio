@@ -1,0 +1,134 @@
+
+/* Items in cart*/
+
+#cart-item,#cart-summary{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cart-item-header,.cart-summary-header{
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    background-color: black;
+}
+
+#cart-item tr{
+    border-bottom: 1px solid black;
+}
+
+#cart-item img{
+    max-height: 300px;
+    max-width: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#cart-item h3{
+    font-weight: 700;
+    margin: 1px;
+}
+
+#cart-item h4{
+    font-weight: 900;
+    margin: 1px;
+}
+#cart-item p{
+    max-width: 500px;
+}
+
+form{
+    display: inline;
+}
+.input-group button{
+    background-color: black;
+    color: white;
+}
+
+.input-group button:hover{
+    background-color:white;
+    color: black;
+}
+
+.total-item{
+    max-width: 50px;
+    text-align: center;
+}
+
+/* Summary*/
+
+
+
+#cost-text,#shipping-text{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#cost-price,#shipping-price{
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#total-text{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#total-price{
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 800px) { /* Phone */
+    #cart-item img{
+        max-height: 200px;
+        max-width: 100px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #cart-item h3{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    #cart-item h4{
+        font-weight: 900;
+        font-size: 16px;
+    }
+    
+    #cart-item p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+        font-size: 14px;
+    }
+    
+    #cart-item p:hover{
+        overflow:visible;
+        white-space: pre-wrap;
+        text-overflow: inherit;
+    
+    }
+    
+    
+}

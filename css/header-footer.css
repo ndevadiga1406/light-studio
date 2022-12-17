@@ -1,15 +1,23 @@
 
 /*  Header */
-.login-button,.cartlogo,.srch-btn{
+.login-button,.cart-logo,.srch-btn{
     margin: 5px;
     font-weight: 900;
     background-color: black;
     color: white;
 }
+
+.login-button:hover,.cart-logo:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
 input[type='search']{
     font-weight: 900;
     height: auto;
 }
+
 
 /*  Nav Bar */
 
@@ -47,6 +55,27 @@ li>a:hover{
     color: black;
     background-color: white; 
 }
+
+/* Scroll Bar */
+
+#scroll-style::-webkit-scrollbar-track
+{
+	border: 2px solid black;
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-webkit-scrollbar
+{
+	width: 15px;
+    border: 1px solid white;
+	background-color: #F5F5F5;
+}
+
+#scroll-style::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+
 
 /*  Footer */
 .footer{
