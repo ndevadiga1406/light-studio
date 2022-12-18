@@ -28,7 +28,9 @@
     width: 15rem;
     margin-top: 10px;
 }
-
+.card-img-top{
+    height: 18rem;
+}
 
 .all-product>h2{    
     font-weight: 20%;
@@ -80,6 +82,9 @@ div>h2{
     }
     .card-img-top{
         height: 11rem;
+        width: 9em;  
+        display: block;
+        margin: 15px auto 0px auto;
     }
     
     .p-p{
@@ -131,8 +136,11 @@ div>h2{
         margin-top: 10px;
     }
     .card-img-top{
-        height: 11rem;
-    }
+        height: 10rem;
+        width: 8em;  
+        display: block;
+        margin: 10px auto 0px auto; 
+     }
     
     .p-p{
         align-items: center;
