@@ -183,6 +183,15 @@ form{
         max-width: 120px;
         font-size: 14px;
     }
+
+    #cart-item p:hover{
+        overflow:visible;
+        white-space: pre-wrap;
+        text-overflow: inherit;
+        max-width: 120px;
+        font-size: 14px;
+    
+    }
     #cart-item h3{
         font-weight: 700;
         font-size: 16px;
