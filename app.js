@@ -151,3 +151,62 @@ function cartLoad(){
 
 
 
+// Women Product Page
+
+function womenProductLoad(){
+    $('#women-dresses-product').hide();
+    $('#women-pant-product').hide();
+    $('#women-skirt-product').hide();
+    let type = sessionStorage.getItem("women-product-type");
+    if (type=='dresses'){
+        $('#women-dresses-product').show();
+    }
+    else if (type=='pant'){
+        $('#women-pant-product').show();
+    }
+    else if (type=='skirt'){
+        $('#women-skirt-product').show();
+    }
+    else{
+        $('#women-dresses-product').show();
+        $('#women-pant-product').show();
+        $('#women-skirt-product').show();
+    }
+}
+
+function womenProduct(type){
+    sessionStorage.setItem("women-product-type",type);
+    window.location.href='women-products.html';
+    
+}
+
+
+// Women Product Page
+
+
+function menProductLoad(){
+    $('#men-shirt-product').hide();
+    $('#men-pant-product').hide();
+    $('#men-hoodie-product').hide();
+    let type = sessionStorage.getItem("men-product-type");
+    if (type=='shirt'){
+        $('#men-shirt-product').show();
+    }
+    else if (type=='pant'){
+        $('#men-pant-product').show();
+    }
+    else if (type=='hoodie'){
+        $('#men-hoodie-product').show();
+    }
+    else{
+        $('#men-shirt-product').show();
+        $('#men-pant-product').show();
+        $('#men-hoodie-product').show();
+    }
+}
+
+function menProduct(type){
+    sessionStorage.setItem("men-product-type",type);
+    window.location.href='men-products.html';
+    
+}
