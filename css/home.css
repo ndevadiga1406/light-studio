@@ -43,9 +43,40 @@
     display: inline;
     font-weight: 600;
 }
+.card-body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover{
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.card-img-top{
+    width:80%;
+    border-radius: 15px; 
+    display: block;
+    margin: 25px auto 0px auto;
+    position: relative;
+    z-index: 1;
+}
+
 .card-body>a{
     background-color: black;
     color: white;
+    width: 100%;
+}
+
+.card-title+h5{
+    float: right;
+}
+
+.card-title{
+    display: block;
     width: 100%;
 }
 
@@ -53,6 +84,23 @@
     color: black;
     background-color: white;
     border: 2px solid black;
+}
+
+.card-body .btn{
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.carousel-control-next span{
+    color: white;
 }
 
 
@@ -68,7 +116,6 @@
 }
 .card>img{
     height: 380px;
-
     image-rendering: crisp-edges;
 }
 }
@@ -79,8 +126,12 @@
     } 
     .card{
         margin: auto;
+        width: 90%;
+    }
+    .card-body{
         width: 80%;
-
+        margin-left: auto;
+        margin-right: auto;
     }
     .card>img{
         height: 300px;
@@ -107,10 +158,14 @@
         height: 500px;
         font-size: 14px;
     }
-    .card-title{
-        font-weight: 900;
-    }
     
+    .card-img-top{
+        height: 10rem;
+        width: auto;  
+        display: block;
+        margin: 10px auto 0px auto;
+        border-radius: 15px; 
+     }
 }
 
 @media only screen and (min-width: 601px) and (max-width:1000px) { /* Tablet */
@@ -132,18 +187,3 @@
     }
 }
 
-.carousel-inner{
-    padding: 1em;
-}
-
-.carousel-control-prev,.carousel-control-next{
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    top:50%;
-    transform: translateY(-50%);
-}
-.carousel-control-next span{
-    color: white;
-}

@@ -18,6 +18,9 @@
     font-size: smaller;
 }
 
+.card-title+h5{
+    float: right
+}
 .card-body>a:hover{
     color: black;
     background-color: white;

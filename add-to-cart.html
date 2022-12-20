@@ -48,8 +48,6 @@
 
     <!--Start NavBar -->
 
-    <!-- Commenting NavBar 
-
     <div class="sticky-top" id="navbar">
         <ul class="nav justify-content-center">
             <li class="nav-item active">
@@ -86,7 +84,7 @@
             </li>
         </ul>
     </div>
-    -->
+    
 
     <!--End NavBar -->
     
@@ -103,10 +101,10 @@
 
                         <tr>
                             <td>
-                                <img src="./images/Products/Women/Dress/pink-dress.jpg" alt="">
+                                <img src="./images/Products/Women/Dress/red-dress.jpg" alt="">
                             </td>
                             <td>
-                                <h3>Pink Dress</h3>
+                                <h3>Red Dress</h3>
                                 <h4>₹ <span>400</span></h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
                                 <button class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></button>
@@ -125,17 +123,40 @@
             
                         <tr>
                             <td>
-                                <img src="./images/Products/Women/Dress/pink-dress.jpg" alt="">
+                                <img src="./images/Products/Men/Hoodie/yellow-hoodie.jpg" alt="">
                             </td>
                             <td>
-                                <h3>Pink Dress</h3>
-                                <h4>₹ <span>500</span></h4>
+                                <h3>Yellow Hoodie</h3>
+                                <h4>₹ <span>700</span></h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
                                 <a class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></a>
                             </td>
                             <td>
                             <form>
                                     <input style="display:none" class="id" name="id" value="2" />
+                                <div class="input-group mb-3">
+                                    <button class="btn" onclick="minusClick(this.form)" type="button" id="button-minus">-</button>
+                                    <input class="total-item" type="number" value="1"  min="1" name="items"  type="text" class="form-control">
+                                    <button class="btn" onclick="plusClick(this.form)" type="button" id="button-plus">+</button>
+                                </div>
+                            </form>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <img src="./images/Products/Kid/girl-blue-dress.jpg" alt="">
+                            </td>
+                            <td>
+                                <h3>Blue Dress (Girl)</h3>
+                                <h4>₹ <span>450</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
+                                <a class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></a>
+                            </td>
+                            <td>
+                            <form>
+                                    <input style="display:none" class="id" name="id" value="3" />
                                 <div class="input-group mb-3">
                                     <button class="btn" onclick="minusClick(this.form)" type="button" id="button-minus">-</button>
                                     <input class="total-item" type="number" value="1"   name="items"  type="text" class="form-control">
@@ -147,17 +168,17 @@
                         
                         <tr>
                             <td>
-                                <img src="./images/Products/Women/Dress/pink-dress.jpg" alt="">
+                                <img src="./images/Products/Kid/boy-black-hoodie.jpg" alt="">
                             </td>
                             <td>
-                                <h3>Pink Dress</h3>
-                                <h4>₹ <span>300</span></h4>
+                                <h3>Black Hoodie (Boy)</h3>
+                                <h4>₹ <span>450</span></h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet velit vel ipsum euismod bibendum.</p>
                                 <a class="btn cart-logo" onclick="removeCart(this)" > <i class="cart fa fa-trash"></i></a>
                             </td>
                             <td>
                             <form>
-                                    <input style="display:none" class="id" name="id" value="3" />
+                                    <input style="display:none" class="id" name="id" value="4" />
                                 <div class="input-group mb-3">
                                     <button class="btn" onclick="minusClick(this.form)" type="button" id="button-minus">-</button>
                                     <input class="total-item" type="number" value="1"  min="1" name="items"  type="text" class="form-control">
@@ -167,7 +188,7 @@
                             </td>
                         </tr>
 
-
+                        
                     </table>
                 </div>
             </div>
