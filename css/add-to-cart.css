@@ -1,24 +1,25 @@
-
 /* Items in cart*/
 
-#cart-item,#cart-summary{
+#cart-item,
+#cart-summary {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
 }
 
-.cart-item-header,.cart-summary-header{
+.cart-item-header,
+.cart-summary-header {
     color: white;
     border: 1px solid black;
     text-align: center;
     background-color: black;
 }
 
-#cart-item tr{
+#cart-item tr {
     border-bottom: 1px solid black;
 }
 
-#cart-item img{
+#cart-item img {
     max-height: 300px;
     max-width: 150px;
     display: block;
@@ -26,33 +27,35 @@
     margin-left: auto;
 }
 
-#cart-item h3{
+#cart-item h3 {
     font-weight: 700;
     margin: 1px;
 }
 
-#cart-item h4{
+#cart-item h4 {
     font-weight: 900;
     margin: 1px;
 }
-#cart-item p{
+
+#cart-item p {
     max-width: 500px;
 }
 
-form{
+form {
     display: inline;
 }
-.input-group button{
+
+.input-group button {
     background-color: black;
     color: white;
 }
 
-.input-group button:hover{
-    background-color:white;
+.input-group button:hover {
+    background-color: white;
     color: black;
 }
 
-.total-item{
+.total-item {
     max-width: 50px;
     text-align: center;
 }
@@ -61,7 +64,8 @@ form{
 
 
 
-#cost-text,#shipping-text{
+#cost-text,
+#shipping-text {
     float: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -70,7 +74,8 @@ form{
     font-weight: 500;
 }
 
-#cost-price,#shipping-price{
+#cost-price,
+#shipping-price {
     float: right;
     padding-left: 5px;
     padding-right: 5px;
@@ -78,7 +83,7 @@ form{
     font-weight: 500;
 }
 
-#total-text{
+#total-text {
     float: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -87,7 +92,7 @@ form{
     font-weight: 700;
 }
 
-#total-price{
+#total-price {
     float: right;
     padding-left: 5px;
     padding-right: 5px;
@@ -98,70 +103,76 @@ form{
 /* Media Queries*/
 
 
-@media only screen and (min-width: 501px) and (max-width:1000px) { /* Tablet */
-    .input-group button{
+@media only screen and (min-width: 501px) and (max-width:1000px) {
+
+    /* Tablet */
+    .input-group button {
         background-color: black;
         color: white;
         width: calc(60%/3);
         text-align: center;
     }
-    
-    .total-item{
+
+    .total-item {
         width: calc(60%/3);
         text-align: center;
     }
 
-    #cart-item img{
+    #cart-item img {
         max-height: 200px;
         max-width: 100px;
         display: block;
         margin-right: auto;
         margin-left: auto;
     }
-    
-    #cart-item h3{
+
+    #cart-item h3 {
         font-weight: 700;
         font-size: 16px;
     }
-    #cart-item h4{
+
+    #cart-item h4 {
         font-weight: 900;
         font-size: 16px;
     }
-    
-    #cart-item p{
+
+    #cart-item p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 120px;
         font-size: 14px;
     }
-    
-    #cart-item p:hover{
-        overflow:visible;
+
+    #cart-item p:hover {
+        overflow: visible;
         white-space: pre-wrap;
         text-overflow: inherit;
-    
+
     }
 }
 
-@media only screen and (max-width: 450px) { /* Phone */
-    
-    .input-group button{
+@media only screen and (max-width: 450px) {
+    /* Phone */
+
+    .input-group button {
         background-color: black;
         color: white;
         width: calc(100%/3);
         text-align: center;
     }
-    #cart-item h3{
+
+    #cart-item h3 {
         font-weight: 700;
         font-size: 16px;
     }
-    #cart-item h4{
+
+    #cart-item h4 {
         font-weight: 900;
         font-size: 16px;
     }
-    
-    #cart-item img{
+
+    #cart-item img {
         max-height: 200px;
         max-width: 90px;
         display: block;
@@ -169,7 +180,7 @@ form{
         margin-left: auto;
     }
 
-    #cart-item p{
+    #cart-item p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -177,32 +188,36 @@ form{
         font-size: 14px;
     }
 
-    #cart-item p:hover{
-        overflow:visible;
+    #cart-item p:hover {
+        overflow: visible;
         white-space: pre-wrap;
         text-overflow: inherit;
         max-width: 120px;
         font-size: 14px;
-    
+
     }
-    #cart-item h3{
+
+    #cart-item h3 {
         font-weight: 700;
         font-size: 16px;
     }
-    #cart-item h4{
+
+    #cart-item h4 {
         font-weight: 900;
         font-size: 16px;
     }
-    .total-item{
+
+    .total-item {
         width: calc(100%/3);
         text-align: center;
     }
-    li>a{
+
+    li>a {
         font-weight: 900;
         color: white;
         background-color: black;
         text-decoration: none;
         font-size: 13px;
     }
-    
+
 }

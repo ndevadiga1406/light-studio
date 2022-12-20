@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/all-product.css">
-    
+
     <script src="./js/app.js"></script>
 </head>
 
@@ -22,7 +22,8 @@
     <div style="border-bottom: 1px solid black;" id="header">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="150px" height="60px"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="150px"
+                        height="60px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,14 +31,14 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <div class="mx-auto me-auto mb-2 mb-lg-0 ">
                         <p class="nav-item">
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn srch-btn" type="submit">Search</button>
+                            <form class="input-group mb-3">
+                                <input class="form-control" type="search" placeholder="Product, Category, etc." ria-describedby="button-search" aria-label="button-addon2">
+                                <button class="btn srch-btn" id="button-addon2" type="submit">Search</button>
                             </form>
                         </p>
                     </div>
                     <div>
-                        <button class="btn login-button"  onclick="window.location.href='login.html'" >Log In</button>
+                        <button class="btn login-button" onclick="window.location.href='login.html'">Log In</button>
                         <a class="btn cart-logo" href="add-to-cart.html"> <i class="cart fa fa-shopping-cart"></i> </a>
                     </div>
                 </div>
@@ -85,72 +86,77 @@
     </div>
     <!--End NavBar -->
 
-    
+
 
     <!-- Start Kid Product-->
     <div id="kid-product" class="all-product container-fluid">
         <h2>Kid Collections</h2>
         <hr>
         <div class="row g-2 row-cols-auto">
-          
+
             <div class="col-lg-2 p-p  col-sm-6  col-md-4">
-            <div class="card">
-                <img src="images/Products/Kid/boy-blue-hoodie.jpg" class="card-img-top" alt="boy-blue-hoodie">
-                <div class="card-body">
-                  <h5 class="card-title">Blue Hoodie (Boy)</h5>
-                  <h5 ><strong>₹450</strong></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn"><i class="cart fa fa-shopping-cart"></i> Add to cart</a>
+                <div class="card">
+                    <img src="images/Products/Kid/boy-blue-hoodie.jpg" class="card-img-top" alt="boy-blue-hoodie">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Hoodie (Boy)</h5>
+                        <h5><strong>₹450</strong></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn"><i class="cart fa fa-shopping-cart"></i> Add to cart</a>
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="col-lg-2 p-p  col-sm-6  col-md-4">
-            <div class="card">
-                <img src="images/Products/Kid/girl-pink-dress.jpg" class="card-img-top" alt="girl-pink-dress">
-                <div class="card-body">
-                  <h5 class="card-title">Pink Dress (Girl)</h5>
-                  <h5 ><strong>₹450</strong></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn"><i class="cart fa fa-shopping-cart"></i> Add to cart</a>
+            <div class="col-lg-2 p-p  col-sm-6  col-md-4">
+                <div class="card">
+                    <img src="images/Products/Kid/girl-pink-dress.jpg" class="card-img-top" alt="girl-pink-dress">
+                    <div class="card-body">
+                        <h5 class="card-title">Pink Dress (Girl)</h5>
+                        <h5><strong>₹450</strong></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn"><i class="cart fa fa-shopping-cart"></i> Add to cart</a>
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="col-lg-2 p-p  col-sm-6  col-md-4">
-            <div class="card">
-                <img src="images/Products/Kid/girl-white-dress.jpg" class="card-img-top" alt="girl-white-dress">
-                <div class="card-body">
-                  <h5 class="card-title">White Dress (Girl)</h5>
-                  <h5 ><strong>₹450</strong></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn"><i class="cart fa fa-shopping-cart"></i> Add to cart</a>
+            <div class="col-lg-2 p-p  col-sm-6  col-md-4">
+                <div class="card">
+                    <img src="images/Products/Kid/girl-white-dress.jpg" class="card-img-top" alt="girl-white-dress">
+                    <div class="card-body">
+                        <h5 class="card-title">White Dress (Girl)</h5>
+                        <h5><strong>₹450</strong></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn"><i class="cart fa fa-shopping-cart"></i> Add to cart</a>
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="col-lg-2 p-p  col-sm-6  col-md-4">
-            <div class="card">
-                <img src="images/Products/Kid/girl-blue-dress.jpg" class="card-img-top" alt="blue-jeans">
-                        <div class="card-body">
-                          <h5 class="card-title">Blue Dress (Girl)</h5>
-                          <h5 ><strong>₹450</strong></h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+            <div class="col-lg-2 p-p  col-sm-6  col-md-4">
+                <div class="card">
+                    <img src="images/Products/Kid/girl-blue-dress.jpg" class="card-img-top" alt="blue-jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Dress (Girl)</h5>
+                        <h5><strong>₹450</strong></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-2 p-p  col-sm-6  col-md-4">
-            <div class="card">
-                <img src="images/Products/Kid/boy-black-hoodie.jpg" class="card-img-top" alt="boy-black-hoodie">
-                        <div class="card-body">
-                          <h5 class="card-title">Black Hoodie (Boy)</h5>
-                          <h5 ><strong>₹450</strong></h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+            <div class="col-lg-2 p-p  col-sm-6  col-md-4">
+                <div class="card">
+                    <img src="images/Products/Kid/boy-black-hoodie.jpg" class="card-img-top" alt="boy-black-hoodie">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Hoodie (Boy)</h5>
+                        <h5><strong>₹450</strong></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          
+
         </div>
-      </div>
+    </div>
     <!-- End Dresses  Product-->
 
     <!--Start Footer -->
@@ -255,7 +261,7 @@
                         </tr>
                     </table>
                 </div>
-                
+
                 <!--Start CopyRight -->
                 <div class="copyright-footer col-12">
                     <h6> Copyright LIGHT STUDIO 2022-23</h6>

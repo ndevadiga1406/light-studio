@@ -1,28 +1,30 @@
-
 /* Home-Page Cover Image */
 
-.img-cover{
+.img-cover {
     position: relative;
 }
-.img-fluid{
+
+.img-fluid {
     position: relative;
     z-index: 1;
     height: auto;
 }
-.cover-img-logo{
-    position:absolute;
+
+.cover-img-logo {
+    position: absolute;
     z-index: 2;
-    top:30%;
+    top: 30%;
     left: 39.5%;
     text-align: center;
     height: 12%;
     width: auto;
 }
-.cover-img-text{
-    position:absolute;
+
+.cover-img-text {
+    position: absolute;
     z-index: 2;
-    top:42%;
-    font-size:xx-large;
+    top: 42%;
+    font-size: xx-large;
     width: 100%;
     text-align: center;
 }
@@ -30,160 +32,183 @@
 /* Home-Page Featured Products*/
 
 
-.featured-products{
+.featured-products {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.featured-products>h2{
+.featured-products>h2 {
     font-weight: 900;
     text-align: center;
 }
-.card-body>h5{
+
+.card-body>h5 {
     display: inline;
     font-weight: 600;
 }
-.card-body{
+
+.card-body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.card{
+
+.card {
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 2px 2px 2px 2px black;
 }
 
-.card-img-top{
-    width:80%;
-    border-radius: 15px; 
+.card-img-top {
+    width: 80%;
+    border-radius: 15px;
     display: block;
     margin: 25px auto 0px auto;
     position: relative;
     z-index: 1;
 }
 
-.card-body>a{
+.card-body>a {
     background-color: black;
     color: white;
     width: 100%;
 }
 
-.card-title+h5{
+.card-title+h5 {
     float: right;
 }
 
-.card-title{
+.card-title {
     display: block;
     width: 100%;
 }
 
-.card-body>a:hover{
+.card-body>a:hover {
     color: black;
     background-color: white;
     border: 2px solid black;
 }
 
-.card-body .btn{
+.card-body .btn {
     border-radius: 15px;
     margin-bottom: 10px;
 }
 
-.carousel-control-prev,.carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
     background-color: black;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
 }
-.carousel-control-next span{
+
+.carousel-control-next span {
     color: white;
 }
 
 
-@media only screen and (min-width: 1000px) { /* Laptop and Desktop */
-.card-wrapper{
-    display: flex;
-    margin:auto auto;
+@media only screen and (min-width: 1000px) {
 
-}
-.card{
-    margin: 10px;
-    width: calc(100%/5);
-}
-.card>img{
-    height: 380px;
-    image-rendering: crisp-edges;
-}
+    /* Laptop and Desktop */
+    .card-wrapper {
+        display: flex;
+        margin: auto auto;
+
+    }
+
+    .card {
+        margin: 10px;
+        width: calc(100%/5);
+    }
+
+    .card>img {
+        height: 380px;
+        image-rendering: crisp-edges;
+    }
 }
 
-@media only screen and (max-width: 600px) { /* Phone */
-    .card:not(:first-child){
+@media only screen and (max-width: 600px) {
+
+    /* Phone */
+    .card:not(:first-child) {
         display: none;
-    } 
-    .card{
+    }
+
+    .card {
         margin: auto;
         width: 90%;
     }
-    .card-body{
+
+    .card-body {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-    .card>img{
+
+    .card>img {
         height: 300px;
     }
-    .card-wrapper{
-        margin:15px auto;
+
+    .card-wrapper {
+        margin: 15px auto;
     }
-    .cover-img-text{
-        position:absolute;
+
+    .cover-img-text {
+        position: absolute;
         z-index: 2;
-        top:42%;
-        font-size:large;
+        top: 42%;
+        font-size: large;
         width: 100%;
         text-align: center;
     }
-    li>a{
+
+    li>a {
         font-weight: 900;
         color: white;
         background-color: black;
         text-decoration: none;
         font-size: 13px;
     }
-    #carouselExampleControls{
+
+    #carouselExampleControls {
         height: 500px;
         font-size: 14px;
     }
-    
-    .card-img-top{
+
+    .card-img-top {
         height: 10rem;
-        width: auto;  
+        width: auto;
         display: block;
         margin: 10px auto 0px auto;
-        border-radius: 15px; 
-     }
+        border-radius: 15px;
+    }
 }
 
-@media only screen and (min-width: 601px) and (max-width:1000px) { /* Tablet */
-    .card:not(:nth-child(-n+3)){
+@media only screen and (min-width: 601px) and (max-width:1000px) {
+
+    /* Tablet */
+    .card:not(:nth-child(-n+3)) {
         display: none;
     }
-    .card{
+
+    .card {
         margin: 5px;
         width: calc(100%/3);
         border: 1px gray solid;
 
     }
-    .card>img{
+
+    .card>img {
         height: 300px;
     }
-    .card-wrapper{
+
+    .card-wrapper {
         display: flex;
-        margin:15px auto;
+        margin: 15px auto;
     }
 }
-

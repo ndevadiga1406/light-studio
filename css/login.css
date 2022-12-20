@@ -1,29 +1,29 @@
-
 /* Login Form */
 
-.login-page{
+.login-page {
     background-color: black;
 }
 
-.login-form{
+.login-form {
     max-width: 500px;
     background-color: white;
     border-radius: 25px;
     padding: 25px;
-    margin:250px auto 0px auto;
+    margin: 250px auto 0px auto;
 }
 
-.form-cover{
+.form-cover {
     margin: 10px;
 }
-img{
+
+img {
     max-height: 120px;
     display: block;
-    margin:0px auto 20px auto;
+    margin: 0px auto 20px auto;
     width: 50%;
 }
 
-.btn{
+.btn {
     background-color: black;
     color: white;
     width: 100%;
@@ -31,54 +31,55 @@ img{
     margin-top: 20px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
-.input-box{
+.input-box {
     border: 1px solid black;
     border-radius: 25px;
 }
 
-div>label{
+div>label {
     font-weight: 700;
 }
 
 /* Alert box */
 
-.alert-box{
+.alert-box {
     margin: 0px 10px 0px 10px;
 }
-.alert-fail{
+
+.alert-fail {
     max-width: 500px;
-    background-color:black;
+    background-color: black;
     border: 1px solid white;
     border-radius: 25px;
     color: white;
     font-weight: 500;
     line-height: 5px;
     text-align: center;
-    margin:400px auto 0px auto;
+    margin: 400px auto 0px auto;
 }
 
-.alert-success{
+.alert-success {
     max-width: 500px;
-    background-color:black;
+    background-color: black;
     border: 1px solid white;
     border-radius: 25px;
     color: white;
     font-weight: 500;
     line-height: 5px;
     text-align: center;
-    margin:400px auto 0px auto;
+    margin: 400px auto 0px auto;
 }
 
 /*  Loding Spinner */
 
-.spinner-border{
-    margin-top:400px;
+.spinner-border {
+    margin-top: 400px;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -88,21 +89,26 @@ div>label{
 /* Media Queries */
 
 
-@media only screen and (max-width: 450px) { /* Phone */
-    .login-form{
+@media only screen and (max-width: 450px) {
+
+    /* Phone */
+    .login-form {
         margin-top: 100px;
     }
-    .alert-fail{
+
+    .alert-fail {
         font-weight: 500;
         font-size: 14px;
-        margin:300px auto 0px auto;
+        margin: 300px auto 0px auto;
     }
-    .alert-success{
+
+    .alert-success {
         font-weight: 500;
         font-size: 14px;
-        margin:300px auto 0px auto;
+        margin: 300px auto 0px auto;
     }
-    .spinner-border{
-        margin-top:300px;
+
+    .spinner-border {
+        margin-top: 300px;
     }
 }

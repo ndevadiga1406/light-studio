@@ -1,183 +1,203 @@
-
 /* All Product All-Products*/
 
-.card-body>h5{
+.card-body>h5 {
     display: inline;
     font-weight: 600;
     font-size: 15px;
 }
 
-.card-body>a{
+.card-body>a {
     background-color: black;
     color: white;
     width: 100%;
     font-size: 14px;
 }
 
-.card-body>p{
+.card-body>p {
     font-size: smaller;
 }
 
-.card-title+h5{
+.card-title+h5 {
     float: right
 }
-.card-body>a:hover{
+
+.card-body>a:hover {
     color: black;
     background-color: white;
     border: 2px solid black;
 }
 
-.card{
+.card {
     width: 15rem;
     margin-top: 10px;
     border-radius: 15px;
     box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
-    
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
-.all-product{
-    margin-bottom:2%;
+.all-product {
+    margin-bottom: 2%;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 2px 2px 2px 2px black;
 }
-.card-img-top{
+
+.card-img-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 18rem;
 }
 
-.all-product>h2{    
+.all-product>h2 {
     font-weight: 20%;
     margin-top: 10px;
     opacity: 1;
 }
 
-hr{
+hr {
     opacity: 1;
     border: 1px solid black;
 }
 
-@media only screen and (min-width: 601px) and (max-width:1000px) { /* Tablet */
-    .card{
+@media only screen and (min-width: 601px) and (max-width:1000px) {
+
+    /* Tablet */
+    .card {
         width: 15rem;
         margin-top: 10px;
     }
 }
 
-div>h2{
+div>h2 {
     padding: 20px;
     font-weight: 900;
 }
 
-@media only screen and (min-width: 500px)  and (max-width:600px) { /* Phone */
-    
-    .card-body>h5,a{
+@media only screen and (min-width: 500px) and (max-width:600px) {
+    /* Phone */
+
+    .card-body>h5,
+    a {
         font-size: 15px;
     }
-    .card-body>a{
+
+    .card-body>a {
         font-size: 10px;
     }
-    .card-body>p{
+
+    .card-body>p {
         font-size: 10px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
     }
-    .card-body>p:hover{
-        overflow:visible;
+
+    .card-body>p:hover {
+        overflow: visible;
         white-space: pre-wrap;
         text-overflow: inherit;
 
     }
-    li>a{
+
+    li>a {
         font-weight: 900;
         color: white;
         background-color: black;
         text-decoration: none;
         font-size: 13px;
     }
-    .card{
-        width:12rem;
+
+    .card {
+        width: 12rem;
         margin-top: 10px;
     }
-    .card-img-top{
+
+    .card-img-top {
         height: 11rem;
-        width: 9em;  
+        width: 9em;
         display: block;
         margin: 15px auto 0px auto;
     }
-    
-    .p-p{
+
+    .p-p {
         align-items: center;
-        padding-left:30px;
-    }   
-    .all-product{
-        margin-bottom:5%;
+        padding-left: 30px;
+    }
+
+    .all-product {
+        margin-bottom: 5%;
     }
 }
 
 
 
-@media only screen and (max-width: 450px) { /* Phone */
-    
-    .card-body>h5{
-        font-size: 12px;
-    }.card-body>a{
+@media only screen and (max-width: 450px) {
+    /* Phone */
+
+    .card-body>h5 {
         font-size: 12px;
     }
-    
-    .card-body>a{
+
+    .card-body>a {
+        font-size: 12px;
+    }
+
+    .card-body>a {
         font-size: 10px;
     }
 
-    .card-title{
+    .card-title {
         font-size: 10px;
     }
 
-    .card-body>p{
+    .card-body>p {
         font-size: 10px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
     }
-    .card-body>p:hover{
-        overflow:visible;
+
+    .card-body>p:hover {
+        overflow: visible;
         white-space: pre-wrap;
         text-overflow: inherit;
 
     }
-    li>a{
+
+    li>a {
         font-weight: 900;
         color: white;
         background-color: black;
         text-decoration: none;
         font-size: 13px;
     }
-    .card{
-        width:9rem;
+
+    .card {
+        width: 9rem;
         margin-top: 10px;
     }
-    .card-img-top{
+
+    .card-img-top {
         height: 10rem;
-        width: 8em;  
+        width: 8em;
         display: block;
-        margin: 10px auto 0px auto; 
-     }
-    
-    .p-p{
+        margin: 10px auto 0px auto;
+    }
+
+    .p-p {
         align-items: center;
-        padding-left:30px;
-    }   
-    .all-product{
-        margin-bottom:5%;
+        padding-left: 30px;
+    }
+
+    .all-product {
+        margin-bottom: 5%;
     }
 }

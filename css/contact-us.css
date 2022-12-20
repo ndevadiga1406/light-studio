@@ -1,14 +1,13 @@
-
 /* Contact Us Page */
 
-.contact-us>h2{
+.contact-us>h2 {
     font-weight: 900;
     text-align: center;
     padding-bottom: 30px;
     color: white;
 }
 
-.contact-us{
+.contact-us {
     height: auto;
     padding: 40px;
     background-image: url(../images//contact-us-img.jpg);
@@ -16,32 +15,37 @@
     background-repeat: no-repeat;
 }
 
-iframe{
-    height:400px;
-    width:100%;
+iframe {
+    height: 400px;
+    width: 100%;
     border-radius: 20px;
     padding: 5px;
 }
-.mb-3>label{
+
+.mb-3>label {
     font-weight: 500;
     color: white;
 }
 
-#c-form{
+#c-form {
     background-color: rgba(0, 0, 0, 0.5);
-    padding:40px;
+    padding: 40px;
     border-radius: 20px;
 
 }
 
-.side-img{
+.side-img {
     height: 300px;
     width: 100px;
 }
-.mb-3>input,textarea,button{
+
+.mb-3>input,
+textarea,
+button {
     max-width: 500px;
 }
-.contact-us-btn{
+
+.contact-us-btn {
     width: 100%;
     color: white;
     background-color: black;
@@ -49,7 +53,7 @@ iframe{
     border: 0.5px solid white;
 }
 
-.contact-us-btn:hover{
+.contact-us-btn:hover {
     color: black;
     background-color: white;
     border: 0.5px solid black;
@@ -57,14 +61,15 @@ iframe{
 
 
 
-@media only screen and (max-width: 600px) { /* Phone */
-    
-    li>a{
+@media only screen and (max-width: 600px) {
+    /* Phone */
+
+    li>a {
         font-weight: 900;
         color: white;
         background-color: black;
         text-decoration: none;
         font-size: 13px;
     }
-    
+
 }

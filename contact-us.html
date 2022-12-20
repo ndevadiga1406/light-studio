@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/contact-us.css">
-    
+
     <script src="./js/app.js"></script>
 </head>
 
@@ -22,7 +22,8 @@
     <div style="border-bottom: 1px solid black;" id="header">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="150px" height="60px"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="150px"
+                        height="60px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,14 +31,14 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <div class="mx-auto me-auto mb-2 mb-lg-0 ">
                         <p class="nav-item">
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn srch-btn" type="submit">Search</button>
+                            <form class="input-group mb-3">
+                                <input class="form-control" type="search" placeholder="Product, Category, etc." ria-describedby="button-search" aria-label="button-addon2">
+                                <button class="btn srch-btn" id="button-addon2" type="submit">Search</button>
                             </form>
                         </p>
                     </div>
                     <div>
-                        <button class="btn login-button"  onclick="window.location.href='login.html'" >Log In</button>
+                        <button class="btn login-button" onclick="window.location.href='login.html'">Log In</button>
                         <a class="btn cart-logo" href="add-to-cart.html"> <i class="cart fa fa-shopping-cart"></i> </a>
                     </div>
                 </div>
@@ -87,40 +88,65 @@
 
 
     <!--Start Contact Us-->
-        
+
     <div class="container-fluid contact-us">
         <h2> Contact Us</h2>
         <div class="row g-4">
             <div class="col-lg-8 col-sm">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6904623908713!2d72.96931785114744!3d19.20871748694818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b94076525799%3A0xbab0531bacf26703!2sViviana%20Mall!5e0!3m2!1sen!2sin!4v1671104984209!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" ></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.6904623908713!2d72.96931785114744!3d19.20871748694818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b94076525799%3A0xbab0531bacf26703!2sViviana%20Mall!5e0!3m2!1sen!2sin!4v1671104984209!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen=""></iframe>
             </div>
             <div class="col-lg-4 col-sm">
-            <div id="c-form">
-              <form>
-                <div class="mb-3">
-                    <label for="InputName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="InputName" required>
-                  </div>
-                <div class="mb-3">
-                    <label for="InputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="InputEmail1" required>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" for="InputMessage">Message</label>
-                    <textarea type="textarea" class="form-control" id="InputMessage" required></textarea>
-                  </div>
-                  <button type="submit" onclick="contactSubmit(this)" class="btn contact-us-btn">Submit</button>
-                </form>
-                
+                <div id="c-form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputName" class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter your Name" id="InputName" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmail1" class="form-label">Email address</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter your E-mail" required id="InputEmail1" >
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="InputMessage">Message</label>
+                            <textarea type="textarea" name="message" class="form-control" placeholder="Enter your Message" id="InputMessage" ></textarea>
+                        </div>
+                        <button type="submit" onclick="contactSubmit(this.form);return false;" class="btn contact-us-btn">Submit</button>
+                    </form>
+
+                </div>
             </div>
-            </div>
-          </div>
         </div>
     </div>
 
-
     <!--EndContact Us-->
+
+
     
+    <!-- Start Modal -->
+    <button  type="button" style="display: none;" id="failModal" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Alert !</h5>
+                </div>
+                <div class="modal-body">
+                    Please fill required details correctly
+                </div>
+                <div class="modal-footer">
+                    <button type="button"  class="btn btn-danger" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+
     <!--Start Footer -->
     <div class="footer">
         <div class="container">
@@ -223,7 +249,7 @@
                         </tr>
                     </table>
                 </div>
-                
+
                 <!--Start CopyRight -->
                 <div class="copyright-footer col-12">
                     <h6> Copyright LIGHT STUDIO 2022-23</h6>
