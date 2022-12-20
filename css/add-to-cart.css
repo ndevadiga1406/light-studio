@@ -103,7 +103,7 @@ form {
 /* Media Queries*/
 
 
-@media only screen and (min-width: 501px) and (max-width:1000px) {
+@media only screen and (min-width: 451px) and (max-width:1000px) {
 
     /* Tablet */
     .input-group button {
@@ -114,7 +114,7 @@ form {
     }
 
     .total-item {
-        width: calc(60%/3);
+        width: calc(70%/3);
         text-align: center;
     }
 
@@ -158,8 +158,11 @@ form {
     .input-group button {
         background-color: black;
         color: white;
-        width: calc(100%/3);
+        width: 5px;
         text-align: center;
+        font-size: 12px;
+        padding: 10px;
+        margin: 0px;
     }
 
     #cart-item h3 {
@@ -194,7 +197,6 @@ form {
         text-overflow: inherit;
         max-width: 120px;
         font-size: 14px;
-
     }
 
     #cart-item h3 {
