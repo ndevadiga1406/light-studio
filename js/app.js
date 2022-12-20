@@ -14,10 +14,10 @@ function contactSubmit(form) {
     let message=form.message.value;
     let valemail= validateEmail(email);
 
-    if (name !== "" && message !== "" &&  !validateEmail(email))
+    if ( name != "" && message != "" &&  validateEmail(email))
     {
         let subject="Contact Us Form";
-        let body = "Name = "+ name + '\n' + "E-mail = " + email + " \n " + message;
+        let body = "Name : "+ name + "%0D%0A" + "E-mail : " + email + "%0D%0A %0D%0A" + message;
         window.location.href = "mailto:light-studio@xyz.com?subject="+subject+"&body="+body;
         
     }
